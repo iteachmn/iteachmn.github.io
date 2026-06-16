@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="mn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Тооны Сорил! — Хүүхэд өөрөө нээхийг хүсдэг тооны апп</title>
+<meta name="description" content="Тооны Сорил! бол 5–9 насны хүүхдэд зориулсан тоо бодлогын дасгалын апп. Нэмэх, хасах, үржвэрийн хүснэгт, хуваахыг хичээл болон тоглоомоор хөгжилтэй сурна. Тоглох үед сурталчилгаагүй, бүртгэлгүй, офлайн ажиллана. Япон, англи, монгол хэл." />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#2D1B69" />
+<meta name="author" content="iteach.mn" />
+
+<!-- Canonical & language alternates -->
+<link rel="canonical" href="https://iteachmn.github.io/math-challenge/mn/" />
+<link rel="alternate" hreflang="ja" href="https://iteachmn.github.io/math-challenge/" />
+<link rel="alternate" hreflang="en" href="https://iteachmn.github.io/math-challenge/en/" />
+<link rel="alternate" hreflang="mn" href="https://iteachmn.github.io/math-challenge/mn/" />
+<link rel="alternate" hreflang="x-default" href="https://iteachmn.github.io/math-challenge/" />
+
+<!-- OGP / Twitter Card -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Тооны Сорил!" />
+<meta property="og:locale" content="mn_MN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:url" content="https://iteachmn.github.io/math-challenge/mn/" />
+<meta property="og:title" content="Тооны Сорил! — Хүүхэд өөрөө нээхийг хүсдэг тооны апп" />
+<meta property="og:description" content="Сур → Дасгал хий → Шагнал ав. Нэмэх, хасах, үржвэрийн хүснэгтийг хичээл, тоглоомоор. Тоглох үед сурталчилгаагүй, бүртгэлгүй, офлайн ажиллана." />
+<meta property="og:image" content="https://iteachmn.github.io/math-challenge/assets/ogp.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Тооны Сорил!" />
+<meta name="twitter:description" content="Хүүхэд өөрөө нээхийг хүсдэг тооны апп. Нэмэх, хасах, үржвэрийн хүснэгтийг хөгжилтэй сурна." />
+<meta name="twitter:image" content="https://iteachmn.github.io/math-challenge/assets/ogp.png" />
+
+<!-- Structured data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Тооны Сорил!",
+  "alternateName": "Math Challenge!",
+  "operatingSystem": "Android",
+  "applicationCategory": "EducationalApplication",
+  "inLanguage": ["mn", "ja", "en"],
+  "description": "5–9 насны хүүхдэд зориулсан тоо бодлогын дасгалын апп. Нэмэх, хасах, үржвэрийн хүснэгт, хуваахыг хичээл болон тоглоомоор хөгжилтэй сурна. Тоглох үед сурталчилгаагүй, бүртгэлгүй, офлайн ажиллана.",
+  "image": "https://iteachmn.github.io/math-challenge/assets/app_icon.png",
+  "url": "https://iteachmn.github.io/math-challenge/mn/",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=mn.iteach.math_challenge",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "MNT" },
+  "author": { "@type": "Organization", "name": "iteach.mn", "url": "https://iteach.mn" }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700;900&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css" />
+<link rel="icon" href="../assets/app_icon.png" />
+</head>
+<body>
+
+<!-- ============ Header ============ -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand-mini" href="#top">
+      <img src="../assets/app_icon.png" alt="Тооны Сорил!" />
+      <b>Тооны Сорил!</b>
+    </a>
+    <div class="header-spacer"></div>
+    <div class="lang-toggle" role="navigation" aria-label="Хэл солих">
+      <a href="../">JP</a>
+      <a href="../en/">EN</a>
+      <a href="./" class="active">MN</a>
+    </div>
+    <a class="header-cta" href="https://play.google.com/store/apps/details?id=mn.iteach.math_challenge&referrer=utm_source%3Dlp_mn%26utm_medium%3Dweb%26utm_campaign%3Dlanding">▶ Татах</a>
+  </div>
+</header>
+
+<!-- ============ Section 1 — Hero ============ -->
+<section class="night hero on-dark" id="top">
+  <div class="stars"></div>
+  <span class="star-deco font-display" style="top:14%; left:10%; font-size:22px;">✦</span>
+  <span class="star-deco font-display" style="top:24%; right:12%; font-size:16px; animation-delay:1.1s;">✦</span>
+  <span class="star-deco font-display" style="top:60%; left:8%; font-size:14px; animation-delay:2s;">✦</span>
+  <div class="wrap">
+    <img class="hero-icon" src="../assets/app_icon.png" alt="Тооны Сорил! аппын дүрс" />
+    <h1 class="hero-name font-display">Тооны Сорил!</h1>
+    <p class="hero-catch">Хүүхэд <span class="pop">өөрөө нээхийг хүсдэг</span> тооны апп</p>
+    <p class="hero-sub">
+      Сур → Дасгал хий → Шагнал ав — өдөр бүрийн тоо бодлогын дадал аяндаа бүрдэнэ.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=mn.iteach.math_challenge&referrer=utm_source%3Dlp_mn%26utm_medium%3Dweb%26utm_campaign%3Dlanding">
+        <span class="btn-ico">▶</span>
+        <span class="btn-label"><small>Татаж авах</small>Google Play</span>
+      </a>
+      <span class="btn btn-store" role="button" aria-disabled="true">
+        <span class="btn-ico">🍎</span>
+        <span class="btn-label"><small>App Store</small>Удахгүй</span>
+      </span>
+    </div>
+
+    <div class="hero-shot">
+      <!-- Phone mockup: Home screen mini-UI -->
+      <div class="phone phone-lg">
+        <div class="phone-screen">
+          <div class="mui">
+            <div class="mui-top" style="padding-bottom:26px;">
+              <div class="stars"></div>
+              <div style="display:flex; justify-content:space-between; align-items:center; position:relative;">
+                <span class="mui-chip">🔥 3 хоног дараалан!</span>
+                <span class="mui-chip" style="background:rgba(255,255,255,0.18); color:#fff;">⭐ 120</span>
+              </div>
+              <div style="position:relative; margin-top:14px; font-family:'Fredoka',sans-serif; font-weight:900; color:#fff;">
+                <div style="font-size:12px; opacity:.8;">Тооны</div>
+                <div style="font-size:26px; line-height:1;">Сорил!</div>
+              </div>
+            </div>
+            <div class="mui-body">
+              <div class="mui-grid">
+                <div class="mui-opbtn" style="background:linear-gradient(180deg,#5C9BFF,#3B82F6);"><span class="e">➕</span>Нэмэх</div>
+                <div class="mui-opbtn" style="background:linear-gradient(180deg,#FF6B6B,#EF4444);"><span class="e">➖</span>Хасах</div>
+                <div class="mui-opbtn" style="background:linear-gradient(180deg,#34D399,#10B981);"><span class="e">✖️</span>Үржих</div>
+                <div class="mui-opbtn" style="background:linear-gradient(180deg,#FBBF24,#F59E0B);"><span class="e">➗</span>Хуваах</div>
+                <div class="mui-opbtn" style="background:linear-gradient(180deg,#22D3EE,#06B6D4);"><span class="e">➕➖</span>Холимог</div>
+                <div class="mui-opbtn" style="background:linear-gradient(180deg,#A78BFA,#8B5CF6);"><span class="e">🎲</span>Санамсаргүй</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Section 2 — Features ============ -->
+<section class="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-kicker">Features</span>
+      <h2 class="sec-title">Хүүхэд, эцэг эх хоёулаа дуртай</h2>
+    </div>
+    <div class="feat-grid">
+      <article class="card feat-card">
+        <div class="feat-badge" style="background:rgba(251,146,60,0.12); color:#FB923C;">📖</div>
+        <h3>Хичээл горим</h3>
+        <p>Хөдөлгөөнт зураг, дуу хоолойтой хичээлээр нэмэх, хасах, үржвэрийн хүснэгтийг хялбар тайлбарлана. Үржвэрийн хүснэгтийг караоке шиг дуулж тогтооно!</p>
+      </article>
+      <article class="card feat-card">
+        <div class="feat-badge" style="background:rgba(139,92,246,0.12); color:#8B5CF6;">🎮</div>
+        <h3>6 дасгалын горим</h3>
+        <p>Нэмэх, хасах, үржих, хуваах, холимог, санамсаргүй — 1–5 түвшин, асуултын тоог сонгоно.</p>
+      </article>
+      <article class="card feat-card">
+        <div class="feat-badge" style="background:rgba(255,214,10,0.16); color:#E5A20A;">⭐</div>
+        <h3>Наалт цуглуулах &amp; дараалал</h3>
+        <p>Дасгал болгоны дараа наалтын гача. 23 төрлийг цуглуул, өдөр бүрийн шагналаар үргэлжилнэ.</p>
+      </article>
+      <article class="card feat-card">
+        <div class="feat-badge" style="background:rgba(59,130,246,0.12); color:#3B82F6;">💡</div>
+        <h3>Сэжүүр</h3>
+        <p>Ойлгохгүй бол цэг, аравтын хүрээ, тооны шулуунаар зөөлөн тусална.</p>
+      </article>
+      <article class="card feat-card">
+        <div class="feat-badge" style="background:rgba(16,185,129,0.12); color:#10B981;">🔒</div>
+        <h3>Эцэг эхийн хяналт</h3>
+        <p>Тоглох үед сурталчилгаагүй. Хувийн мэдээлэл цуглуулдаггүй, бүртгэл шаардлагагүй, офлайн ажиллана. Тохиргоог PIN кодоор хамгаална.</p>
+      </article>
+      <article class="card feat-card">
+        <div class="feat-badge" style="background:rgba(6,182,212,0.12); color:#06B6D4;">🌐</div>
+        <h3>3 хэл</h3>
+        <p>Япон, англи, монгол хэлтэй.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Section 3 — Screenshots ============ -->
+<section class="shots night on-dark">
+  <div class="stars"></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-kicker">Screens</span>
+      <h2 class="sec-title" style="color:#fff;">Доторх байдлыг үзээрэй</h2>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="shots-scroll">
+
+      <!-- Shot 1: times-table karaoke -->
+      <div class="shot-item">
+        <div class="phone"><div class="phone-screen">
+          <div class="mui">
+            <div class="mui-top" style="background:#fff; color:var(--ink); padding:36px 14px 14px; box-shadow:0 2px 8px rgba(45,27,105,.06);">
+              <div style="font-size:10px; font-weight:800; color:#FB923C;">📖 Сурах</div>
+              <div style="font-size:17px; font-weight:900;">2-ын хүснэгтийг дуул</div>
+            </div>
+            <div class="mui-body" style="padding:12px;">
+              <div style="background:rgba(251,146,60,.08); border-radius:14px; padding:12px; text-align:center; margin-bottom:10px;">
+                <div style="font-family:'Fredoka'; font-size:24px; font-weight:900;">2 × 3 = 6</div>
+                <div style="color:#FB923C; font-weight:800; letter-spacing:1px; font-size:13px; margin-top:4px;">хоёр гурав зургаа</div>
+              </div>
+              <div class="kuku-row"><span class="n">✓</span>2 × 1 = 2</div>
+              <div class="kuku-row"><span class="n">✓</span>2 × 2 = 4</div>
+              <div class="kuku-row cur"><span class="n">3</span>2 × 3 = 6</div>
+              <div class="kuku-row" style="opacity:.5;"><span class="n" style="background:#E5DEF2; color:#9A93AE;">4</span>2 × 4 = 8</div>
+            </div>
+          </div>
+        </div></div>
+        <p class="shot-cap">Үржвэрийн хүснэгтийг дуулж тогтоо</p>
+      </div>
+
+      <!-- Shot 2: lesson see -->
+      <div class="shot-item">
+        <div class="phone"><div class="phone-screen">
+          <div class="mui">
+            <div class="mui-top" style="background:#fff; color:var(--ink); padding:36px 14px 14px; box-shadow:0 2px 8px rgba(45,27,105,.06);">
+              <div style="font-size:10px; font-weight:800; color:#3B82F6;">➕ Нэмэх</div>
+              <div style="font-size:17px; font-weight:900;">Нийлээд хэд вэ?</div>
+            </div>
+            <div class="mui-body" style="display:flex; flex-direction:column; gap:10px;">
+              <div style="background:#fff; border-radius:14px; padding:14px; text-align:center; box-shadow:0 4px 14px rgba(45,27,105,.08);">
+                <div style="display:flex; align-items:center; justify-content:center; gap:8px; margin-bottom:8px;">
+                  <span style="display:flex; gap:3px;"><i style="width:14px;height:14px;border-radius:14px;background:#3B82F6;display:inline-block;"></i><i style="width:14px;height:14px;border-radius:14px;background:#3B82F6;display:inline-block;"></i><i style="width:14px;height:14px;border-radius:14px;background:#3B82F6;display:inline-block;"></i></span>
+                  <b style="color:#3B82F6;">＋</b>
+                  <span style="display:flex; gap:3px;"><i style="width:14px;height:14px;border-radius:14px;background:#3B82F6;display:inline-block;"></i><i style="width:14px;height:14px;border-radius:14px;background:#3B82F6;display:inline-block;"></i><i style="width:14px;height:14px;border-radius:14px;background:#3B82F6;display:inline-block;"></i><i style="width:14px;height:14px;border-radius:14px;background:#3B82F6;display:inline-block;"></i></span>
+                </div>
+                <div style="font-family:'Fredoka'; font-size:22px; font-weight:900;">3 + 4 = <span style="color:#E5A20A;">7</span></div>
+              </div>
+              <div style="display:flex; gap:8px; align-items:flex-end;">
+                <div style="font-size:30px;">⭐</div>
+                <div style="background:#fff; border-radius:14px 14px 14px 4px; padding:8px 12px; font-size:11px; font-weight:700; box-shadow:0 4px 14px rgba(45,27,105,.08);">Хоёр бүлгийг нийлүүл!</div>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <p class="shot-cap">Ойлгомжтой хичээлүүд</p>
+      </div>
+
+      <!-- Shot 3: streak / history -->
+      <div class="shot-item">
+        <div class="phone"><div class="phone-screen">
+          <div class="mui">
+            <div class="mui-top" style="padding:34px 14px 16px;">
+              <div class="stars"></div>
+              <div style="position:relative; font-size:10px; font-weight:800; opacity:.85;">📊 Бүртгэл</div>
+              <div style="position:relative; font-size:18px; font-weight:900;">Сайн байна!</div>
+            </div>
+            <div class="mui-body">
+              <div style="background:#fff; border-radius:14px; padding:12px; display:flex; gap:8px; box-shadow:0 4px 14px rgba(45,27,105,.06); margin-bottom:10px;">
+                <div style="flex:1; text-align:center;"><div style="font-family:'Fredoka'; font-size:22px; font-weight:900;">40</div><div style="font-size:9px; color:#6B6080; font-weight:800;">бодсон</div></div>
+                <div style="flex:1; text-align:center;"><div style="font-family:'Fredoka'; font-size:22px; font-weight:900; color:#22C55E;">33</div><div style="font-size:9px; color:#6B6080; font-weight:800;">зөв</div></div>
+                <div style="flex:1; text-align:center;"><div style="font-family:'Fredoka'; font-size:22px; font-weight:900; color:#E5A20A;">83%</div><div style="font-size:9px; color:#6B6080; font-weight:800;">хувь</div></div>
+              </div>
+              <div style="background:#fff; border-radius:14px; padding:12px; box-shadow:0 4px 14px rgba(45,27,105,.06);">
+                <div style="display:grid; grid-template-columns:repeat(7,1fr); gap:4px;">
+                  <span style="aspect-ratio:1; border-radius:6px; background:rgba(59,130,246,.4);"></span>
+                  <span style="aspect-ratio:1; border-radius:6px; background:rgba(59,130,246,.4);"></span>
+                  <span style="aspect-ratio:1; border-radius:6px; background:#3B82F6;"></span>
+                  <span style="aspect-ratio:1; border-radius:6px; background:rgba(59,130,246,.4);"></span>
+                  <span style="aspect-ratio:1; border-radius:6px; background:#F2EDFA;"></span>
+                  <span style="aspect-ratio:1; border-radius:6px; background:rgba(59,130,246,.4);"></span>
+                  <span style="aspect-ratio:1; border-radius:6px; background:#3B82F6; display:flex; align-items:center; justify-content:center; font-size:9px;">⭐</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <p class="shot-cap">Өдөр бүрийн дараалал дадлыг хадгална</p>
+      </div>
+
+      <!-- Shot 4: sticker gacha -->
+      <div class="shot-item">
+        <div class="phone"><div class="phone-screen">
+          <div class="mui">
+            <div class="mui-top" style="flex:0 0 auto; padding:40px 14px 30px;">
+              <div class="stars"></div>
+              <div style="position:relative; text-align:center;">
+                <div style="font-size:54px;">🎉</div>
+                <div style="font-size:18px; font-weight:900;">Наалт авлаа!</div>
+              </div>
+            </div>
+            <div class="mui-body">
+              <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
+                <span style="aspect-ratio:1; border-radius:14px; background:rgba(255,214,10,.18); border:2px solid #FFD60A; display:flex; align-items:center; justify-content:center; font-size:26px;">🌟</span>
+                <span style="aspect-ratio:1; border-radius:14px; background:#fff; display:flex; align-items:center; justify-content:center; font-size:26px; box-shadow:0 4px 14px rgba(45,27,105,.08);">🚀</span>
+                <span style="aspect-ratio:1; border-radius:14px; background:#EFE9F8; display:flex; align-items:center; justify-content:center; font-size:22px; opacity:.4;">🔒</span>
+                <span style="aspect-ratio:1; border-radius:14px; background:#fff; display:flex; align-items:center; justify-content:center; font-size:26px; box-shadow:0 4px 14px rgba(45,27,105,.08);">💎</span>
+                <span style="aspect-ratio:1; border-radius:14px; background:#fff; display:flex; align-items:center; justify-content:center; font-size:26px; box-shadow:0 4px 14px rgba(45,27,105,.08);">🦄</span>
+                <span style="aspect-ratio:1; border-radius:14px; background:#EFE9F8; display:flex; align-items:center; justify-content:center; font-size:22px; opacity:.4;">🔒</span>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <p class="shot-cap">Хичээл зүтгэлийнхээ төлөө наалт ав</p>
+      </div>
+
+      <!-- Shot 5: hint -->
+      <div class="shot-item">
+        <div class="phone"><div class="phone-screen">
+          <div class="mui">
+            <div class="mui-top" style="background:var(--surface); color:var(--ink); padding:36px 14px 12px;">
+              <div style="display:flex; align-items:center; gap:8px; background:#fff; border-radius:12px; padding:10px; box-shadow:0 4px 14px rgba(45,27,105,.06);">
+                <div style="font-family:'Fredoka'; font-size:20px; font-weight:900;">8 ＋ 7 = <span style="color:#3B82F6;">?</span></div>
+              </div>
+            </div>
+            <div class="mui-body" style="padding:12px;">
+              <div style="background:rgba(255,214,10,.08); border:2px solid rgba(255,214,10,.4); border-radius:16px; padding:12px;">
+                <div style="display:flex; align-items:center; gap:6px; margin-bottom:8px;">
+                  <span style="width:22px;height:22px;border-radius:12px;background:#FFD60A;display:flex;align-items:center;justify-content:center;font-size:13px;">💡</span>
+                  <b style="font-size:12px;">Аравтын хүрээгээр бодъё</b>
+                </div>
+                <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:3px; background:#fff; border-radius:10px; padding:6px;">
+                  <span style="aspect-ratio:1;border-radius:5px;background:#3B82F6;"></span><span style="aspect-ratio:1;border-radius:5px;background:#3B82F6;"></span><span style="aspect-ratio:1;border-radius:5px;background:#3B82F6;"></span><span style="aspect-ratio:1;border-radius:5px;background:#3B82F6;"></span><span style="aspect-ratio:1;border-radius:5px;background:#3B82F6;"></span>
+                  <span style="aspect-ratio:1;border-radius:5px;background:#3B82F6;"></span><span style="aspect-ratio:1;border-radius:5px;background:#3B82F6;"></span><span style="aspect-ratio:1;border-radius:5px;background:#3B82F6;"></span><span style="aspect-ratio:1;border-radius:5px;background:#FFD60A;"></span><span style="aspect-ratio:1;border-radius:5px;background:#FFD60A;"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <p class="shot-cap">Гацвал зөөлөн сэжүүр</p>
+      </div>
+
+      <!-- Shot 6: time attack -->
+      <div class="shot-item">
+        <div class="phone"><div class="phone-screen">
+          <div class="mui">
+            <div class="mui-top" style="background:linear-gradient(180deg,#FF6B6B,#F59E0B); padding:36px 14px 16px;">
+              <div class="stars"></div>
+              <div style="position:relative; display:flex; align-items:center; gap:8px;">
+                <span class="mui-chip" style="background:rgba(255,255,255,.22); color:#fff;">⏱ 00:48</span>
+                <span class="mui-chip" style="background:rgba(255,255,255,.22); color:#fff;">42 оноо</span>
+              </div>
+              <div style="position:relative; text-align:center; margin-top:18px; font-family:'Fredoka'; font-size:30px; font-weight:900;">8 × 7</div>
+            </div>
+            <div class="mui-body" style="display:flex; align-items:center; justify-content:center;">
+              <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:6px; width:100%;">
+                <span style="background:#fff; border-radius:10px; padding:10px; text-align:center; font-weight:900; box-shadow:0 3px 0 #cfc4e8;">7</span>
+                <span style="background:#fff; border-radius:10px; padding:10px; text-align:center; font-weight:900; box-shadow:0 3px 0 #cfc4e8;">8</span>
+                <span style="background:#fff; border-radius:10px; padding:10px; text-align:center; font-weight:900; box-shadow:0 3px 0 #cfc4e8;">9</span>
+                <span style="background:#fff; border-radius:10px; padding:10px; text-align:center; font-weight:900; box-shadow:0 3px 0 #cfc4e8;">4</span>
+                <span style="background:#fff; border-radius:10px; padding:10px; text-align:center; font-weight:900; box-shadow:0 3px 0 #cfc4e8;">5</span>
+                <span style="background:#fff; border-radius:10px; padding:10px; text-align:center; font-weight:900; box-shadow:0 3px 0 #cfc4e8;">6</span>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <p class="shot-cap">Цагтай уралд — Цагийн дайралт</p>
+      </div>
+
+      <!-- Shot 7: progress -->
+      <div class="shot-item">
+        <div class="phone"><div class="phone-screen">
+          <div class="mui">
+            <div class="mui-top" style="padding:34px 14px 16px;">
+              <div class="stars"></div>
+              <div style="position:relative; font-size:10px; font-weight:800; opacity:.85;">🏅 Наалтын дэвтэр</div>
+              <div style="position:relative; font-size:17px; font-weight:900;">Цуглуулсан наалт</div>
+            </div>
+            <div class="mui-body" style="display:flex; flex-direction:column; align-items:center; gap:10px;">
+              <div style="width:84px; height:84px; border-radius:50%; background:conic-gradient(#FFD60A 0% 70%, #EFE9F8 70% 100%); display:flex; align-items:center; justify-content:center;">
+                <div style="width:62px; height:62px; border-radius:50%; background:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                  <b style="font-family:'Fredoka'; font-size:22px;">7</b><span style="font-size:9px; color:#6B6080; font-weight:800;">/ 10</span>
+                </div>
+              </div>
+              <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:6px; width:100%;">
+                <span style="aspect-ratio:1; border-radius:10px; background:#fff; border:2px solid #FFD60A; display:flex; align-items:center; justify-content:center; font-size:18px;">🌟</span>
+                <span style="aspect-ratio:1; border-radius:10px; background:#fff; border:2px solid #FFD60A; display:flex; align-items:center; justify-content:center; font-size:18px;">🔥</span>
+                <span style="aspect-ratio:1; border-radius:10px; background:#fff; border:2px solid #FFD60A; display:flex; align-items:center; justify-content:center; font-size:18px;">🏆</span>
+                <span style="aspect-ratio:1; border-radius:10px; background:#EFE9F8; display:flex; align-items:center; justify-content:center; font-size:15px; opacity:.4;">🔒</span>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <p class="shot-cap">Ахицаа нэг харцаар хараарай</p>
+      </div>
+
+      <!-- Shot 8: languages -->
+      <div class="shot-item">
+        <div class="phone"><div class="phone-screen">
+          <div class="mui">
+            <div class="mui-top" style="padding:40px 14px 24px;">
+              <div class="stars"></div>
+              <div style="position:relative; text-align:center;">
+                <div style="font-size:40px;">🌐</div>
+                <div style="font-size:16px; font-weight:900;">3 хэл</div>
+              </div>
+            </div>
+            <div class="mui-body" style="display:flex; flex-direction:column; gap:8px; justify-content:center;">
+              <div style="background:#fff; border-radius:12px; padding:11px 14px; font-weight:800; font-size:13px; display:flex; gap:10px; align-items:center; box-shadow:0 3px 12px rgba(45,27,105,.06);"><span style="font-size:20px;">🇯🇵</span> 日本語</div>
+              <div style="background:#fff; border-radius:12px; padding:11px 14px; font-weight:800; font-size:13px; display:flex; gap:10px; align-items:center; box-shadow:0 3px 12px rgba(45,27,105,.06);"><span style="font-size:20px;">🇺🇸</span> English</div>
+              <div style="background:#fff; border-radius:12px; padding:11px 14px; font-weight:800; font-size:13px; display:flex; gap:10px; align-items:center; box-shadow:0 3px 12px rgba(45,27,105,.06);"><span style="font-size:20px;">🇲🇳</span> Монгол</div>
+            </div>
+          </div>
+        </div></div>
+        <p class="shot-cap">Япон, англи, монгол</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ Section 4 — Parents ============ -->
+<section class="parents">
+  <div class="wrap">
+    <div class="parents-inner">
+      <div class="sec-head" style="margin-bottom:6px;">
+        <span class="sec-kicker">For Parents</span>
+        <h2 class="sec-title">Эцэг эхэд тайван байдал</h2>
+      </div>
+      <ul class="check-list">
+        <li><span class="ck">✓</span><span>Тоглох үед сурталчилгаа саад болохгүй</span></li>
+        <li><span class="ck">✓</span><span>Хувийн мэдээлэлгүй, бүртгэл шаардлагагүй</span></li>
+        <li><span class="ck">✓</span><span>Бүрэн офлайн ажиллана</span></li>
+        <li><span class="ck">✓</span><span>Тохиргоог PIN кодоор хамгаална</span></li>
+        <li><span class="ck">✓</span><span>Сургуулийн тооны хөтөлбөртэй нийцсэн</span></li>
+        <li><span class="ck">✓</span><span>Өдөр / долоо хоног / сарын бүртгэл бодит ахицыг харуулна</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Section 5 — Lesson mode ============ -->
+<section class="lesson">
+  <div class="wrap">
+    <div class="lesson-inner">
+      <div>
+        <span class="sec-kicker">Lesson Mode</span>
+        <h2 class="sec-title" style="text-align:left; margin-top:10px;">Хичээл горимоор<br>үржвэрийн хүснэгтийг эзэмш</h2>
+        <ul class="lesson-list">
+          <li><span class="lesson-num">🎵</span><span><b>Үржвэрийн хүснэгтийг караоке маягаар дуулж тогтоо</b></span></li>
+          <li><span class="lesson-num">2</span><span><b>2-ын хүснэгтээс 9 хүртэл нэг нэгээр нь давших</b></span></li>
+          <li><span class="lesson-num">🏅</span><span><b>Дуулах → шалгалт → тэмдэг авах</b></span></li>
+        </ul>
+      </div>
+      <div class="lesson-shot">
+        <div class="phone"><div class="phone-screen">
+          <div class="mui">
+            <div class="mui-top" style="background:#fff; color:var(--ink); padding:36px 14px 14px; box-shadow:0 2px 8px rgba(45,27,105,.06);">
+              <div style="font-size:10px; font-weight:800; color:#FB923C;">📖 Сурах</div>
+              <div style="font-size:17px; font-weight:900;">2-ын хүснэгтийг дуул</div>
+            </div>
+            <div class="mui-body" style="padding:12px;">
+              <div style="background:rgba(251,146,60,.08); border-radius:14px; padding:12px; text-align:center; margin-bottom:10px;">
+                <div style="font-family:'Fredoka'; font-size:24px; font-weight:900;">2 × 5 = 10</div>
+                <div style="color:#FB923C; font-weight:800; letter-spacing:1px; font-size:13px; margin-top:4px;">хоёр тав арав</div>
+              </div>
+              <div class="kuku-row"><span class="n">✓</span>2 × 3 = 6</div>
+              <div class="kuku-row"><span class="n">✓</span>2 × 4 = 8</div>
+              <div class="kuku-row cur"><span class="n">5</span>2 × 5 = 10</div>
+              <div class="kuku-row" style="opacity:.5;"><span class="n" style="background:#E5DEF2; color:#9A93AE;">6</span>2 × 6 = 12</div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Section 6 — Languages ============ -->
+<section class="langs night on-dark">
+  <div class="stars"></div>
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:14px;">
+      <span class="sec-kicker">Languages</span>
+      <h2 class="sec-title" style="color:#fff;">Дэмжих хэлүүд</h2>
+    </div>
+    <div class="lang-flags">
+      <div class="lang-pill"><span class="flag">🇯🇵</span> 日本語</div>
+      <div class="lang-pill"><span class="flag">🇺🇸</span> English</div>
+      <div class="lang-pill"><span class="flag">🇲🇳</span> Монгол</div>
+      <div class="lang-pill soon"><span class="flag">🇰🇷</span> 한국어 <span class="soon-tag">удахгүй</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Section 7 — Download CTA ============ -->
+<section class="download night on-dark">
+  <div class="stars"></div>
+  <span class="star-deco font-display" style="top:20%; left:14%; font-size:20px;">✦</span>
+  <span class="star-deco font-display" style="top:30%; right:16%; font-size:15px; animation-delay:1.3s;">✦</span>
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:0;">
+      <span class="sec-kicker">Download</span>
+      <h2 class="sec-title">Яг одоо үнэгүй<br>татаж аваарай</h2>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=mn.iteach.math_challenge&referrer=utm_source%3Dlp_mn%26utm_medium%3Dweb%26utm_campaign%3Dlanding">
+        <span class="btn-ico">▶</span>
+        <span class="btn-label"><small>Татаж авах</small>Google Play</span>
+      </a>
+      <span class="btn btn-store" role="button" aria-disabled="true">
+        <span class="btn-ico">🍎</span>
+        <span class="btn-label"><small>App Store</small>Удахгүй</span>
+      </span>
+    </div>
+    <p class="download-note">Бүх горим нээлттэй, үнэ төлбөргүй — апп доторх худалдан авалтгүй.</p>
+  </div>
+</section>
+
+<!-- ============ Section 8 — Press ============ -->
+<section class="press">
+  <div class="wrap">
+    <div class="press-inner">
+      <h3>Хэвлэл мэдээллийнхэнд</h3>
+      <p>Аппын танилцуулга, дэлгэцийн зураг, дүрс тэмдгийн материалыг хүсэлтээр өгнө.</p>
+      <p style="margin-top:12px;">Холбоо барих: <a class="mail" href="mailto:press@example.com">press@example.com</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Footer ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="brand-mini">
+      <img src="../assets/app_icon.png" alt="" />
+      <b style="color:#fff;">Тооны Сорил!</b>
+    </div>
+    <nav class="foot-links">
+      <a href="#top">Дээш</a>
+      <a href="https://play.google.com/store/apps/details?id=mn.iteach.math_challenge&referrer=utm_source%3Dlp_mn%26utm_medium%3Dweb%26utm_campaign%3Dlanding">Google Play</a>
+      <a href="#">Нууцлалын бодлого</a>
+      <a href="mailto:press@example.com">Холбоо барих</a>
+    </nav>
+    <p class="foot-copy">© 2026 iteach.mn · Math Challenge! けいさんチャレンジ！</p>
+  </div>
+</footer>
+
+</body>
+</html>
