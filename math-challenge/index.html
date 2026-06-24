@@ -14,6 +14,11 @@
 <link rel="alternate" hreflang="ja" href="https://iteachmn.github.io/math-challenge/" />
 <link rel="alternate" hreflang="en" href="https://iteachmn.github.io/math-challenge/en/" />
 <link rel="alternate" hreflang="mn" href="https://iteachmn.github.io/math-challenge/mn/" />
+<link rel="alternate" hreflang="id" href="https://iteachmn.github.io/math-challenge/id/" />
+<link rel="alternate" hreflang="es" href="https://iteachmn.github.io/math-challenge/es/" />
+<link rel="alternate" hreflang="pt" href="https://iteachmn.github.io/math-challenge/pt/" />
+<link rel="alternate" hreflang="hi" href="https://iteachmn.github.io/math-challenge/hi/" />
+<link rel="alternate" hreflang="vi" href="https://iteachmn.github.io/math-challenge/vi/" />
 <link rel="alternate" hreflang="x-default" href="https://iteachmn.github.io/math-challenge/" />
 
 <!-- OGP / Twitter Card -->
@@ -22,16 +27,23 @@
 <meta property="og:locale" content="ja_JP" />
 <meta property="og:locale:alternate" content="en_US" />
 <meta property="og:locale:alternate" content="mn_MN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="vi_VN" />
 <meta property="og:url" content="https://iteachmn.github.io/math-challenge/" />
 <meta property="og:title" content="けいさんチャレンジ！ — 子どもが自分から開く算数アプリ" />
 <meta property="og:description" content="まなぶ → れんしゅう → ごほうび。たし算・ひき算・九九を授業モードとゲームで。広告なし・登録不要・オフライン対応の子ども向け算数アプリ。" />
 <meta property="og:image" content="https://iteachmn.github.io/math-challenge/assets/ogp.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Math Challenge! / けいさんチャレンジ！" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="けいさんチャレンジ！" />
 <meta name="twitter:description" content="子どもが自分から開く算数アプリ。たし算・ひき算・九九を楽しく練習。" />
 <meta name="twitter:image" content="https://iteachmn.github.io/math-challenge/assets/ogp.png" />
+<meta name="twitter:image:alt" content="Math Challenge! / けいさんチャレンジ！" />
 
 <!-- Structured data (JSON-LD) -->
 <script type="application/ld+json">
@@ -42,9 +54,21 @@
   "alternateName": "Math Challenge!",
   "operatingSystem": "Android",
   "applicationCategory": "EducationalApplication",
-  "inLanguage": ["ja", "en", "mn"],
+  "applicationSubCategory": "Mathematics",
+  "contentRating": "Everyone",
+  "softwareVersion": "2.6.0",
+  "datePublished": "2026-06-21",
+  "featureList": "Lesson mode (addition, subtraction, times tables, division), 6 practice modes, time attack, visual hints, sticker collection, daily streaks, progress history, parental PIN lock, offline play",
+  "inLanguage": ["ja", "en", "mn", "id", "es", "pt", "hi", "vi"],
   "description": "5〜9歳向けの算数学習アプリ。たし算・ひき算・九九（かけ算）・わり算を、授業モードとゲームで楽しく練習。広告なし・登録不要・オフライン対応。",
   "image": "https://iteachmn.github.io/math-challenge/assets/app_icon.png",
+  "screenshot": [
+    "https://iteachmn.github.io/math-challenge/images/home.png",
+    "https://iteachmn.github.io/math-challenge/images/study.png",
+    "https://iteachmn.github.io/math-challenge/images/challange.png",
+    "https://iteachmn.github.io/math-challenge/images/history_1.png"
+  ],
+  "publisher": { "@type": "Organization", "name": "iteach.mn", "url": "https://iteach.mn" },
   "url": "https://iteachmn.github.io/math-challenge/",
   "downloadUrl": "https://play.google.com/store/apps/details?id=mn.iteach.math_challenge",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
@@ -55,6 +79,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700;900&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/home.png" fetchpriority="high" />
 <link rel="stylesheet" href="styles.css" />
 <link rel="icon" href="assets/app_icon.png" />
 </head>
@@ -68,11 +93,19 @@
       <b>けいさんチャレンジ！</b>
     </a>
     <div class="header-spacer"></div>
-    <div class="lang-toggle" role="navigation" aria-label="言語切替">
-      <a href="./" class="active">JP</a>
-      <a href="en/">EN</a>
-      <a href="mn/">MN</a>
-    </div>
+    <details class="lang-menu">
+      <summary aria-label="言語を選択">🌐 日本語</summary>
+      <div class="lang-menu-list" role="navigation" aria-label="言語を選択">
+        <a href="./" aria-current="page">日本語</a>
+        <a href="en/">English</a>
+        <a href="mn/">Монгол</a>
+        <a href="id/">Bahasa Indonesia</a>
+        <a href="es/">Español</a>
+        <a href="pt/">Português</a>
+        <a href="hi/">हिन्दी</a>
+        <a href="vi/">Tiếng Việt</a>
+      </div>
+    </details>
     <a class="header-cta" href="https://play.google.com/store/apps/details?id=mn.iteach.math_challenge&referrer=utm_source%3Dlp_ja%26utm_medium%3Dweb%26utm_campaign%3Dlanding">▶ ダウンロード</a>
   </div>
 </header>
@@ -106,29 +139,7 @@
       <!-- Phone mockup: Home screen mini-UI -->
       <div class="phone phone-lg">
         <div class="phone-screen">
-          <div class="mui">
-            <div class="mui-top" style="padding-bottom:26px;">
-              <div class="stars"></div>
-              <div style="display:flex; justify-content:space-between; align-items:center; position:relative;">
-                <span class="mui-chip">🔥 3にち れんぞく！</span>
-                <span class="mui-chip" style="background:rgba(255,255,255,0.18); color:#fff;">⭐ 120</span>
-              </div>
-              <div style="position:relative; margin-top:14px; font-family:'Fredoka',sans-serif; font-weight:900; color:#fff;">
-                <div style="font-size:12px; opacity:.8;">けいさん</div>
-                <div style="font-size:26px; line-height:1;">チャレンジ！</div>
-              </div>
-            </div>
-            <div class="mui-body">
-              <div class="mui-grid">
-                <div class="mui-opbtn" style="background:linear-gradient(180deg,#5C9BFF,#3B82F6);"><span class="e">➕</span>たすよ</div>
-                <div class="mui-opbtn" style="background:linear-gradient(180deg,#FF6B6B,#EF4444);"><span class="e">➖</span>ひくよ</div>
-                <div class="mui-opbtn" style="background:linear-gradient(180deg,#34D399,#10B981);"><span class="e">✖️</span>かけるよ</div>
-                <div class="mui-opbtn" style="background:linear-gradient(180deg,#FBBF24,#F59E0B);"><span class="e">➗</span>わるよ</div>
-                <div class="mui-opbtn" style="background:linear-gradient(180deg,#22D3EE,#06B6D4);"><span class="e">➕➖</span>こうご</div>
-                <div class="mui-opbtn" style="background:linear-gradient(180deg,#A78BFA,#8B5CF6);"><span class="e">🎲</span>ランダム</div>
-              </div>
-            </div>
-          </div>
+          <img class="shot-img" fetchpriority="high" decoding="async" src="images/home.png" alt="けいさんチャレンジ！ ホーム画面" />
         </div>
       </div>
     </div>
@@ -146,8 +157,8 @@
       <article class="card feat-card">
         <div class="feat-badge" style="background:rgba(251,146,60,0.12); color:#FB923C;">📖</div>
         <h3>まなぶモード<span class="en">Lesson Mode</span></h3>
-        <p>アニメと音声で、たし算・ひき算・九九をやさしく解説。九九はカラオケのように唱えて覚える！
-          <span class="en">Friendly animated lessons with voice guidance — learn times tables by singing along, karaoke-style.</span></p>
+        <p>アニメと音声で、たし算・ひき算・九九・わり算の4単元をやさしく解説。九九はカラオケのように唱えて覚える！
+          <span class="en">Four lesson units — addition, subtraction, times tables &amp; division — with animation and voice. Learn the times tables by singing along, karaoke-style.</span></p>
       </article>
       <article class="card feat-card">
         <div class="feat-badge" style="background:rgba(139,92,246,0.12); color:#8B5CF6;">🎮</div>
@@ -175,9 +186,9 @@
       </article>
       <article class="card feat-card">
         <div class="feat-badge" style="background:rgba(6,182,212,0.12); color:#06B6D4;">🌐</div>
-        <h3>3言語対応<span class="en">3 Languages</span></h3>
-        <p>日本語・英語・モンゴル語に対応。
-          <span class="en">Available in Japanese, English and Mongolian.</span></p>
+        <h3>8言語対応<span class="en">8 Languages</span></h3>
+        <p>日本語・英語・モンゴル語・インドネシア語・スペイン語・ポルトガル語・ヒンディー語・ベトナム語。
+          <span class="en">Japanese, English, Mongolian, Indonesian, Spanish, Portuguese, Hindi &amp; Vietnamese.</span></p>
       </article>
     </div>
   </div>
@@ -198,22 +209,7 @@
       <!-- Shot 1: kuku karaoke -->
       <div class="shot-item">
         <div class="phone"><div class="phone-screen">
-          <div class="mui">
-            <div class="mui-top" style="background:#fff; color:var(--ink); padding:36px 14px 14px; box-shadow:0 2px 8px rgba(45,27,105,.06);">
-              <div style="font-size:10px; font-weight:800; color:#FB923C;">📖 まなぶ</div>
-              <div style="font-size:17px; font-weight:900;">2 の だん を うたおう</div>
-            </div>
-            <div class="mui-body" style="padding:12px;">
-              <div style="background:rgba(251,146,60,.08); border-radius:14px; padding:12px; text-align:center; margin-bottom:10px;">
-                <div style="font-family:'Fredoka'; font-size:24px; font-weight:900;">2 × 3 = 6</div>
-                <div style="color:#FB923C; font-weight:800; letter-spacing:2px; font-size:13px; margin-top:4px;">に さん が ろく</div>
-              </div>
-              <div class="kuku-row"><span class="n">✓</span>2 × 1 = 2<span class="read">にいちがに</span></div>
-              <div class="kuku-row"><span class="n">✓</span>2 × 2 = 4<span class="read">ににんがし</span></div>
-              <div class="kuku-row cur"><span class="n">3</span>2 × 3 = 6<span class="read">にさんがろく</span></div>
-              <div class="kuku-row" style="opacity:.5;"><span class="n" style="background:#E5DEF2; color:#9A93AE;">4</span>2 × 4 = 8</div>
-            </div>
-          </div>
+          <img class="shot-img" src="images/study.png" alt="まなぶモード（学習メニュー）" loading="lazy" />
         </div></div>
         <p class="shot-cap">九九は うたって おぼえる！<span class="en on-dark">Learn times tables by singing along</span></p>
       </div>
@@ -221,26 +217,7 @@
       <!-- Shot 2: lesson see -->
       <div class="shot-item">
         <div class="phone"><div class="phone-screen">
-          <div class="mui">
-            <div class="mui-top" style="background:#fff; color:var(--ink); padding:36px 14px 14px; box-shadow:0 2px 8px rgba(45,27,105,.06);">
-              <div style="font-size:10px; font-weight:800; color:#3B82F6;">➕ たすよ</div>
-              <div style="font-size:17px; font-weight:900;">あわせて いくつ？</div>
-            </div>
-            <div class="mui-body" style="display:flex; flex-direction:column; gap:10px;">
-              <div style="background:#fff; border-radius:14px; padding:14px; text-align:center; box-shadow:0 4px 14px rgba(45,27,105,.08);">
-                <div style="display:flex; align-items:center; justify-content:center; gap:8px; margin-bottom:8px;">
-                  <span style="display:flex; gap:3px;"><i class="dot" style="width:14px;height:14px;border-radius:14px;background:#3B82F6;display:inline-block;"></i><i style="width:14px;height:14px;border-radius:14px;background:#3B82F6;display:inline-block;"></i><i style="width:14px;height:14px;border-radius:14px;background:#3B82F6;display:inline-block;"></i></span>
-                  <b style="color:#3B82F6;">＋</b>
-                  <span style="display:flex; gap:3px;"><i style="width:14px;height:14px;border-radius:14px;background:#3B82F6;display:inline-block;"></i><i style="width:14px;height:14px;border-radius:14px;background:#3B82F6;display:inline-block;"></i><i style="width:14px;height:14px;border-radius:14px;background:#3B82F6;display:inline-block;"></i><i style="width:14px;height:14px;border-radius:14px;background:#3B82F6;display:inline-block;"></i></span>
-                </div>
-                <div style="font-family:'Fredoka'; font-size:22px; font-weight:900;">3 + 4 = <span style="color:#E5A20A;">7</span></div>
-              </div>
-              <div style="display:flex; gap:8px; align-items:flex-end;">
-                <div style="font-size:30px;">⭐</div>
-                <div style="background:#fff; border-radius:14px 14px 14px 4px; padding:8px 12px; font-size:11px; font-weight:700; box-shadow:0 4px 14px rgba(45,27,105,.08);">2つの かたまりを あわせるよ！</div>
-              </div>
-            </div>
-          </div>
+          <img class="shot-img" src="images/lesson.png" alt="れんしゅう問題の画面" loading="lazy" />
         </div></div>
         <p class="shot-cap">アニメと音声で わかる授業<span class="en on-dark">Lessons you can actually understand</span></p>
       </div>
@@ -248,31 +225,7 @@
       <!-- Shot 3: streak / history -->
       <div class="shot-item">
         <div class="phone"><div class="phone-screen">
-          <div class="mui">
-            <div class="mui-top" style="padding:34px 14px 16px;">
-              <div class="stars"></div>
-              <div style="position:relative; font-size:10px; font-weight:800; opacity:.85;">📊 きろく</div>
-              <div style="position:relative; font-size:18px; font-weight:900;">がんばったね！</div>
-            </div>
-            <div class="mui-body">
-              <div style="background:#fff; border-radius:14px; padding:12px; display:flex; gap:8px; box-shadow:0 4px 14px rgba(45,27,105,.06); margin-bottom:10px;">
-                <div style="flex:1; text-align:center;"><div style="font-family:'Fredoka'; font-size:22px; font-weight:900;">40</div><div style="font-size:9px; color:#6B6080; font-weight:800;">といた</div></div>
-                <div style="flex:1; text-align:center;"><div style="font-family:'Fredoka'; font-size:22px; font-weight:900; color:#22C55E;">33</div><div style="font-size:9px; color:#6B6080; font-weight:800;">せいかい</div></div>
-                <div style="flex:1; text-align:center;"><div style="font-family:'Fredoka'; font-size:22px; font-weight:900; color:#E5A20A;">83%</div><div style="font-size:9px; color:#6B6080; font-weight:800;">りつ</div></div>
-              </div>
-              <div style="background:#fff; border-radius:14px; padding:12px; box-shadow:0 4px 14px rgba(45,27,105,.06);">
-                <div style="display:grid; grid-template-columns:repeat(7,1fr); gap:4px;">
-                  <span style="aspect-ratio:1; border-radius:6px; background:rgba(59,130,246,.4);"></span>
-                  <span style="aspect-ratio:1; border-radius:6px; background:rgba(59,130,246,.4);"></span>
-                  <span style="aspect-ratio:1; border-radius:6px; background:#3B82F6;"></span>
-                  <span style="aspect-ratio:1; border-radius:6px; background:rgba(59,130,246,.4);"></span>
-                  <span style="aspect-ratio:1; border-radius:6px; background:#F2EDFA;"></span>
-                  <span style="aspect-ratio:1; border-radius:6px; background:rgba(59,130,246,.4);"></span>
-                  <span style="aspect-ratio:1; border-radius:6px; background:#3B82F6; display:flex; align-items:center; justify-content:center; font-size:9px;">⭐</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <img class="shot-img" src="images/history_2.png" alt="れんぞく記録カレンダー" loading="lazy" />
         </div></div>
         <p class="shot-cap">毎日つづく れんぞく記録<span class="en on-dark">Daily streaks keep the habit alive</span></p>
       </div>
@@ -280,25 +233,7 @@
       <!-- Shot 4: sticker gacha -->
       <div class="shot-item">
         <div class="phone"><div class="phone-screen">
-          <div class="mui">
-            <div class="mui-top" style="flex:0 0 auto; padding:40px 14px 30px;">
-              <div class="stars"></div>
-              <div style="position:relative; text-align:center;">
-                <div style="font-size:54px;">🎉</div>
-                <div style="font-size:18px; font-weight:900;">シール ゲット！</div>
-              </div>
-            </div>
-            <div class="mui-body">
-              <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
-                <span style="aspect-ratio:1; border-radius:14px; background:rgba(255,214,10,.18); border:2px solid #FFD60A; display:flex; align-items:center; justify-content:center; font-size:26px;">🌟</span>
-                <span style="aspect-ratio:1; border-radius:14px; background:#fff; display:flex; align-items:center; justify-content:center; font-size:26px; box-shadow:0 4px 14px rgba(45,27,105,.08);">🚀</span>
-                <span style="aspect-ratio:1; border-radius:14px; background:#EFE9F8; display:flex; align-items:center; justify-content:center; font-size:22px; opacity:.4;">🔒</span>
-                <span style="aspect-ratio:1; border-radius:14px; background:#fff; display:flex; align-items:center; justify-content:center; font-size:26px; box-shadow:0 4px 14px rgba(45,27,105,.08);">💎</span>
-                <span style="aspect-ratio:1; border-radius:14px; background:#fff; display:flex; align-items:center; justify-content:center; font-size:26px; box-shadow:0 4px 14px rgba(45,27,105,.08);">🦄</span>
-                <span style="aspect-ratio:1; border-radius:14px; background:#EFE9F8; display:flex; align-items:center; justify-content:center; font-size:22px; opacity:.4;">🔒</span>
-              </div>
-            </div>
-          </div>
+          <img class="shot-img" src="images/book.png" alt="あつめたシール（シールちょう）" loading="lazy" />
         </div></div>
         <p class="shot-cap">がんばったら シールガチャ！<span class="en on-dark">Earn surprise stickers for your effort</span></p>
       </div>
@@ -306,25 +241,7 @@
       <!-- Shot 5: hint -->
       <div class="shot-item">
         <div class="phone"><div class="phone-screen">
-          <div class="mui">
-            <div class="mui-top" style="background:var(--surface); color:var(--ink); padding:36px 14px 12px;">
-              <div style="display:flex; align-items:center; gap:8px; background:#fff; border-radius:12px; padding:10px; box-shadow:0 4px 14px rgba(45,27,105,.06);">
-                <div style="font-family:'Fredoka'; font-size:20px; font-weight:900;">8 ＋ 7 = <span style="color:#3B82F6;">?</span></div>
-              </div>
-            </div>
-            <div class="mui-body" style="padding:12px;">
-              <div style="background:rgba(255,214,10,.08); border:2px solid rgba(255,214,10,.4); border-radius:16px; padding:12px;">
-                <div style="display:flex; align-items:center; gap:6px; margin-bottom:8px;">
-                  <span style="width:22px;height:22px;border-radius:12px;background:#FFD60A;display:flex;align-items:center;justify-content:center;font-size:13px;">💡</span>
-                  <b style="font-size:12px;">テンフレームで かんがえよう</b>
-                </div>
-                <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:3px; background:#fff; border-radius:10px; padding:6px;">
-                  <span style="aspect-ratio:1;border-radius:5px;background:#3B82F6;"></span><span style="aspect-ratio:1;border-radius:5px;background:#3B82F6;"></span><span style="aspect-ratio:1;border-radius:5px;background:#3B82F6;"></span><span style="aspect-ratio:1;border-radius:5px;background:#3B82F6;"></span><span style="aspect-ratio:1;border-radius:5px;background:#3B82F6;"></span>
-                  <span style="aspect-ratio:1;border-radius:5px;background:#3B82F6;"></span><span style="aspect-ratio:1;border-radius:5px;background:#3B82F6;"></span><span style="aspect-ratio:1;border-radius:5px;background:#3B82F6;"></span><span style="aspect-ratio:1;border-radius:5px;background:#FFD60A;"></span><span style="aspect-ratio:1;border-radius:5px;background:#FFD60A;"></span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <img class="shot-img" src="images/hint_1.png" alt="ステップ式のヒント" loading="lazy" />
         </div></div>
         <p class="shot-cap">つまずいても ヒントで安心<span class="en on-dark">Friendly hints when you get stuck</span></p>
       </div>
@@ -332,26 +249,7 @@
       <!-- Shot 6: time attack -->
       <div class="shot-item">
         <div class="phone"><div class="phone-screen">
-          <div class="mui">
-            <div class="mui-top" style="background:linear-gradient(180deg,#FF6B6B,#F59E0B); padding:36px 14px 16px;">
-              <div class="stars"></div>
-              <div style="position:relative; display:flex; align-items:center; gap:8px;">
-                <span class="mui-chip" style="background:rgba(255,255,255,.22); color:#fff;">⏱ 00:48</span>
-                <span class="mui-chip" style="background:rgba(255,255,255,.22); color:#fff;">42点</span>
-              </div>
-              <div style="position:relative; text-align:center; margin-top:18px; font-family:'Fredoka'; font-size:30px; font-weight:900;">8 × 7</div>
-            </div>
-            <div class="mui-body" style="display:flex; align-items:center; justify-content:center;">
-              <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:6px; width:100%;">
-                <span style="background:#fff; border-radius:10px; padding:10px; text-align:center; font-weight:900; box-shadow:0 3px 0 #cfc4e8;">7</span>
-                <span style="background:#fff; border-radius:10px; padding:10px; text-align:center; font-weight:900; box-shadow:0 3px 0 #cfc4e8;">8</span>
-                <span style="background:#fff; border-radius:10px; padding:10px; text-align:center; font-weight:900; box-shadow:0 3px 0 #cfc4e8;">9</span>
-                <span style="background:#fff; border-radius:10px; padding:10px; text-align:center; font-weight:900; box-shadow:0 3px 0 #cfc4e8;">4</span>
-                <span style="background:#fff; border-radius:10px; padding:10px; text-align:center; font-weight:900; box-shadow:0 3px 0 #cfc4e8;">5</span>
-                <span style="background:#fff; border-radius:10px; padding:10px; text-align:center; font-weight:900; box-shadow:0 3px 0 #cfc4e8;">6</span>
-              </div>
-            </div>
-          </div>
+          <img class="shot-img" src="images/challange.png" alt="タイムアタック（スピード勝負）" loading="lazy" />
         </div></div>
         <p class="shot-cap">スピード勝負！タイムアタック<span class="en on-dark">Race the clock in Time Attack</span></p>
       </div>
@@ -359,26 +257,7 @@
       <!-- Shot 7: progress -->
       <div class="shot-item">
         <div class="phone"><div class="phone-screen">
-          <div class="mui">
-            <div class="mui-top" style="padding:34px 14px 16px;">
-              <div class="stars"></div>
-              <div style="position:relative; font-size:10px; font-weight:800; opacity:.85;">🏅 シールちょう</div>
-              <div style="position:relative; font-size:17px; font-weight:900;">あつめた シール</div>
-            </div>
-            <div class="mui-body" style="display:flex; flex-direction:column; align-items:center; gap:10px;">
-              <div style="width:84px; height:84px; border-radius:50%; background:conic-gradient(#FFD60A 0% 70%, #EFE9F8 70% 100%); display:flex; align-items:center; justify-content:center;">
-                <div style="width:62px; height:62px; border-radius:50%; background:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-                  <b style="font-family:'Fredoka'; font-size:22px;">7</b><span style="font-size:9px; color:#6B6080; font-weight:800;">/ 10</span>
-                </div>
-              </div>
-              <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:6px; width:100%;">
-                <span style="aspect-ratio:1; border-radius:10px; background:#fff; border:2px solid #FFD60A; display:flex; align-items:center; justify-content:center; font-size:18px;">🌟</span>
-                <span style="aspect-ratio:1; border-radius:10px; background:#fff; border:2px solid #FFD60A; display:flex; align-items:center; justify-content:center; font-size:18px;">🔥</span>
-                <span style="aspect-ratio:1; border-radius:10px; background:#fff; border:2px solid #FFD60A; display:flex; align-items:center; justify-content:center; font-size:18px;">🏆</span>
-                <span style="aspect-ratio:1; border-radius:10px; background:#EFE9F8; display:flex; align-items:center; justify-content:center; font-size:15px; opacity:.4;">🔒</span>
-              </div>
-            </div>
-          </div>
+          <img class="shot-img" src="images/history_1.png" alt="学習のきろくと正答率" loading="lazy" />
         </div></div>
         <p class="shot-cap">がんばりが ひと目でわかる<span class="en on-dark">See your progress at a glance</span></p>
       </div>
@@ -386,22 +265,9 @@
       <!-- Shot 8: languages -->
       <div class="shot-item">
         <div class="phone"><div class="phone-screen">
-          <div class="mui">
-            <div class="mui-top" style="padding:40px 14px 24px;">
-              <div class="stars"></div>
-              <div style="position:relative; text-align:center;">
-                <div style="font-size:40px;">🌐</div>
-                <div style="font-size:16px; font-weight:900;">3つの ことば</div>
-              </div>
-            </div>
-            <div class="mui-body" style="display:flex; flex-direction:column; gap:8px; justify-content:center;">
-              <div style="background:#fff; border-radius:12px; padding:11px 14px; font-weight:800; font-size:13px; display:flex; gap:10px; align-items:center; box-shadow:0 3px 12px rgba(45,27,105,.06);"><span style="font-size:20px;">🇯🇵</span> 日本語</div>
-              <div style="background:#fff; border-radius:12px; padding:11px 14px; font-weight:800; font-size:13px; display:flex; gap:10px; align-items:center; box-shadow:0 3px 12px rgba(45,27,105,.06);"><span style="font-size:20px;">🇺🇸</span> English</div>
-              <div style="background:#fff; border-radius:12px; padding:11px 14px; font-weight:800; font-size:13px; display:flex; gap:10px; align-items:center; box-shadow:0 3px 12px rgba(45,27,105,.06);"><span style="font-size:20px;">🇲🇳</span> Монгол</div>
-            </div>
-          </div>
+          <img class="shot-img" src="images/setting.png" alt="設定・保護者メニュー" loading="lazy" />
         </div></div>
-        <p class="shot-cap">日本語・英語・モンゴル語<span class="en on-dark">Japanese, English and Mongolian</span></p>
+        <p class="shot-cap">8つの言語に対応<span class="en on-dark">Available in 8 languages</span></p>
       </div>
 
     </div>
@@ -437,28 +303,13 @@
         <h2 class="sec-title" style="text-align:left; margin-top:10px;">「まなぶ」モードで<br>九九をマスター<span class="en">Master times tables with Lesson Mode</span></h2>
         <ul class="lesson-list">
           <li><span class="lesson-num">🎵</span><span><b>九九表をカラオケ式で唱えて覚える</b><span class="en">Sing along to learn the times tables</span></span></li>
-          <li><span class="lesson-num">2</span><span><b>2の段から順番に1段ずつクリア</b><span class="en">Clear each table from 2× through 9×, one at a time</span></span></li>
+          <li><span class="lesson-num">2</span><span><b>2の段から順にクリア、九九のあとは わり算も解放</b><span class="en">Clear 2× through 9×, then unlock division</span></span></li>
           <li><span class="lesson-num">🏅</span><span><b>唱え → 確認テスト → バッジ獲得</b><span class="en">Sing → quiz → earn a badge</span></span></li>
         </ul>
       </div>
       <div class="lesson-shot">
         <div class="phone"><div class="phone-screen">
-          <div class="mui">
-            <div class="mui-top" style="background:#fff; color:var(--ink); padding:36px 14px 14px; box-shadow:0 2px 8px rgba(45,27,105,.06);">
-              <div style="font-size:10px; font-weight:800; color:#FB923C;">📖 まなぶ</div>
-              <div style="font-size:17px; font-weight:900;">2 の だん を うたおう</div>
-            </div>
-            <div class="mui-body" style="padding:12px;">
-              <div style="background:rgba(251,146,60,.08); border-radius:14px; padding:12px; text-align:center; margin-bottom:10px;">
-                <div style="font-family:'Fredoka'; font-size:24px; font-weight:900;">2 × 5 = 10</div>
-                <div style="color:#FB923C; font-weight:800; letter-spacing:2px; font-size:13px; margin-top:4px;">に ご じゅう</div>
-              </div>
-              <div class="kuku-row"><span class="n">✓</span>2 × 3 = 6<span class="read">にさんがろく</span></div>
-              <div class="kuku-row"><span class="n">✓</span>2 × 4 = 8<span class="read">にしがはち</span></div>
-              <div class="kuku-row cur"><span class="n">5</span>2 × 5 = 10<span class="read">にごじゅう</span></div>
-              <div class="kuku-row" style="opacity:.5;"><span class="n" style="background:#E5DEF2; color:#9A93AE;">6</span>2 × 6 = 12</div>
-            </div>
-          </div>
+          <img class="shot-img" src="images/study.png" alt="まなぶモードの学習リスト" loading="lazy" />
         </div></div>
       </div>
     </div>
@@ -477,7 +328,11 @@
       <div class="lang-pill"><span class="flag">🇯🇵</span> 日本語</div>
       <div class="lang-pill"><span class="flag">🇺🇸</span> English</div>
       <div class="lang-pill"><span class="flag">🇲🇳</span> Монгол</div>
-      <div class="lang-pill soon"><span class="flag">🇰🇷</span> 한국어 <span class="soon-tag">coming soon</span></div>
+      <div class="lang-pill"><span class="flag">🇮🇩</span> Bahasa Indonesia</div>
+      <div class="lang-pill"><span class="flag">🇪🇸</span> Español</div>
+      <div class="lang-pill"><span class="flag">🇧🇷</span> Português</div>
+      <div class="lang-pill"><span class="flag">🇮🇳</span> हिन्दी</div>
+      <div class="lang-pill"><span class="flag">🇻🇳</span> Tiếng Việt</div>
     </div>
   </div>
 </section>

@@ -90,15 +90,31 @@ section { position: relative; }
   color: #fff; font-size: 18px; letter-spacing: 0.3px;
 }
 .header-spacer { flex: 1; }
-.lang-toggle {
-  display: flex; align-items: center;
-  background: rgba(255,255,255,0.1); border-radius: 999px;
-  padding: 3px; font-size: 13px; font-weight: 700;
+/* language switcher — accessible <details> menu, works without JS */
+.lang-menu { position: relative; }
+.lang-menu > summary {
+  list-style: none; cursor: pointer; white-space: nowrap;
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18);
+  color: #fff; border-radius: 999px; padding: 7px 14px;
+  font-weight: 700; font-size: 13px; line-height: 1;
 }
-.lang-toggle a {
-  padding: 5px 13px; border-radius: 999px; color: rgba(255,255,255,0.6);
+.lang-menu > summary::-webkit-details-marker { display: none; }
+.lang-menu > summary::after { content: '▾'; font-size: 11px; opacity: 0.8; }
+.lang-menu[open] > summary::after { content: '▴'; }
+.lang-menu > summary:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.lang-menu-list {
+  position: absolute; right: 0; top: calc(100% + 8px); z-index: 60;
+  background: #fff; border-radius: 14px; padding: 6px;
+  box-shadow: 0 12px 30px rgba(15,10,40,0.28);
+  display: flex; flex-direction: column; min-width: 180px;
 }
-.lang-toggle a.active { background: var(--gold); color: var(--ink); }
+.lang-menu-list a {
+  padding: 9px 12px; border-radius: 9px; color: #2D1B69;
+  font-weight: 700; font-size: 14px; white-space: nowrap;
+}
+.lang-menu-list a:hover { background: rgba(45,27,105,0.08); }
+.lang-menu-list a[aria-current="page"] { background: var(--gold); color: var(--ink); }
 .header-cta {
   display: none;
   background: var(--gold); color: var(--ink);
@@ -248,27 +264,11 @@ section { position: relative; }
 }
 .phone-lg { width: 290px; }
 
-/* mini-ui building blocks rendered inside phone screens */
-.mui { position: absolute; inset: 0; display: flex; flex-direction: column; }
-.mui-top {
-  background: var(--night-grad); color: #fff;
-  padding: 40px 16px 20px; position: relative; overflow: hidden;
+/* real app screenshots inside the phone frame */
+.shot-img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: top center; display: block;
 }
-.mui-top .stars { position: absolute; inset: 0; opacity: 0.9; }
-.mui-chip {
-  display: inline-flex; align-items: center; gap: 5px;
-  background: var(--gold); color: var(--ink);
-  font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 999px;
-}
-.mui-body { flex: 1; background: var(--surface); padding: 14px; }
-
-.mui-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
-.mui-opbtn {
-  border-radius: 15px; padding: 12px 6px; text-align: center; color: #fff;
-  display: flex; flex-direction: column; gap: 3px; align-items: center;
-  font-size: 11px; font-weight: 800;
-}
-.mui-opbtn .e { font-size: 22px; }
 
 /* caption under each shot */
 .shot-cap {
@@ -360,18 +360,6 @@ section { position: relative; }
 .lesson-list b { font-size: 15.5px; font-weight: 800; }
 .lesson-list .en { font-size: 12px; }
 .lesson-shot { display: flex; justify-content: center; }
-
-/* kuku mini list inside phone */
-.kuku-row {
-  display: flex; align-items: center; gap: 8px;
-  background: #fff; border-radius: 10px; padding: 6px 10px; margin-bottom: 5px;
-  font-size: 11px; font-weight: 700; box-shadow: 0 2px 8px rgba(45,27,105,0.05);
-}
-.kuku-row .n { width: 18px; height: 18px; border-radius: 18px; background: var(--mint); color: #fff;
-  display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 900; }
-.kuku-row.cur { box-shadow: 0 0 0 2px var(--op-learn); }
-.kuku-row.cur .n { background: var(--op-learn); }
-.kuku-row .read { margin-left: auto; color: var(--ink-soft); font-size: 10px; }
 
 /* ============================================================
    Section 6 — Languages
