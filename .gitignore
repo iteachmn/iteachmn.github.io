@@ -1,0 +1,32 @@
+# === OS files ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# === Editor / IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+
+# === Claude Code local settings (machine-specific) ===
+.claude/settings.local.json
+**/.claude/settings.local.json
+
+# === Logs / temp ===
+*.log
+npm-debug.log*
+*.tmp
+*.bak
+
+# === Dependencies / build (in case tooling is added later) ===
+node_modules/
+.cache/
