@@ -9,7 +9,7 @@
   --ink: #2A2118;
   --ink-mid: #5A4A38;
   --ink-soft: #7A6A55;
-  --gold: #B8862B;
+  --gold: #8A6418;
   --gold-soft: rgba(184, 134, 43, 0.14);
   --line: rgba(90, 74, 56, 0.18);
   --dark: #2A2118;
@@ -96,6 +96,7 @@ section { padding: 64px 0; }
 .alt { background: var(--parchment-deep); }
 .dark { background: var(--dark); color: var(--parchment); }
 .dark .sec-lead, .dark p { color: rgba(246,239,223,.8); }
+.dark .sec-kicker { color: #D9B26A; }
 
 .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
 .card {
