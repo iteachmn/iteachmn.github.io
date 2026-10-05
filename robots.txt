@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://iteachmn.github.io/math-challenge/sitemap.xml
+Sitemap: https://iteachmn.github.io/mongol-bichig/sitemap.xml
