@@ -37,8 +37,17 @@ img { max-width: 100%; display: block; }
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 16px; }
 
+/* モンゴル文字: アプリと同じ Classical Mongolian Dashitseden（Bolorsoft free font）を自前配信 */
+@font-face {
+  font-family: 'Dashitseden';
+  src: url('assets/fonts/cmdashitseden.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 .mongol {
-  font-family: 'Noto Sans Mongolian', serif;
+  font-family: 'Dashitseden', serif;
   writing-mode: vertical-lr;
   text-orientation: sideways;
   line-height: 1.2;

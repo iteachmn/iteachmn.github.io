@@ -1,0 +1,7 @@
+Classical Mongolian Dashitseden (cmdashitseden.woff, converted from cmdashitseden.ttf v5.91)
+Copyright 2008 Bolorsoft LLC. All Rights Reserved.
+
+License text embedded in the font's name table (nameID 13/14):
+  "Bolorsoft free font. This font may be downloaded, distributed and used free of
+   charge for both personal and commercial use. Any other use is prohibited."
+  https://fonts.bolorsoft.com/license
