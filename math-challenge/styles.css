@@ -420,3 +420,7 @@ section { position: relative; }
 
 /* curved divider between dark/light */
 .curve { display: block; width: 100%; height: 40px; margin-bottom: -1px; }
+
+/* CJK pages: M PLUS Rounded 1c has no Hangul and only Japanese-form hanzi, so use system CJK fonts after Fredoka */
+html:lang(ko) body, html:lang(ko) body * { font-family: 'Fredoka', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif; }
+html:lang(zh-Hant) body, html:lang(zh-Hant) body * { font-family: 'Fredoka', 'PingFang TC', 'Microsoft JhengHei', 'Noto Sans TC', sans-serif; }
